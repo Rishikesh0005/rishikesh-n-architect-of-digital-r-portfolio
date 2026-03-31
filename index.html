@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishikesh N | Architect of Digital Realms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
+    
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg-anim-injected" aria-hidden="true">
+  <div class="inj-orb inj-orb-1"></div>
+  <div class="inj-orb inj-orb-2"></div>
+  <div class="inj-orb inj-orb-3"></div>
+  <div class="inj-orb inj-orb-4"></div>
+</div>
+
+    <div class="vignette" aria-hidden="true"></div>
+    <canvas id="emberCanvas"></canvas>
+    <div class="bg-layer" aria-hidden="true"></div>
+    
+    <header>
+        <nav>
+            <div class="container nav-container">
+                <a href="#" class="nav-logo">R<span>.</span>N</a>
+                <div class="nav-links">
+                    <a href="#projects" class="nav-link">Conquests</a>
+                    <a href="#skills" class="nav-link">The Armoury</a>
+                    <a href="#experience" class="nav-link">The Chronicle</a>
+                    <a href="#contact" class="nav-link">Send a Raven</a>
+                </div>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="hero-role">Rishikesh of House N</p>
+                    <h1 class="hero-name">Architect of Digital Realms</h1>
+                    <p class="hero-tagline">Forging scalable, cloud-native kingdoms from the fires of innovation, and breaking the chains of legacy code.</p>
+                     <div class="dragon-container">
+                        <svg id="dragon-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path id="dragon-body" d="M100,150 C120,130 140,120 160,110 C180,100 190,80 180,60 C170,40 150,30 130,40 C110,50 100,70 100,90"/>
+                            <path id="dragon-wing" d="M100,90 Q140,50 170,80 L140,110 Z"/>
+                            <path id="dragon-tail" d="M100,150 Q80,170 60,160 T40,130"/>
+                            <g id="dragon-head">
+                                <path d="M100,90 Q90,80 80,85 C70,90 70,100 80,105 Q90,110 100,100"/>
+                                <circle cx="85" cy="95" r="2"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Seek an Alliance</a>
+                        <a href="https://github.com/rishikeshpandian" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">View the Archives</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator" aria-hidden="true">
+                <span>Scroll Down</span>
+                <div class="mouse-icon">
+                    <div class="mouse-wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <span class="section-label reveal-dramatic">Work Portfolio</span>
+                <h2 class="reveal">Conquests & Campaigns</h2>
+                <div class="projects-grid">
+                    <div class="project-card reveal-dramatic" data-delay="0.1s">
+                        <h3>PayPal's Treasury System</h3>
+                        <p>Forged a vast, distributed treasury system for the merchant guilds of PayPal, securing the idempotent flow of gold and establishing a major source of kingdom revenue.</p>
+                        <div class="project-tags">
+                            <span class="tag">Architecture</span><span class="tag">Payments</span><span class="tag">Scalability</span>
+                        </div>
+                    </div>
+                    <div class="project-card reveal-dramatic" data-delay="0.2s">
+                        <h3>The Cloud Citadel's Proxy</h3>
+                        <p>Constructed a high-speed reverse proxy atop the Netty framework, garrisoned in AWS. Increased network speed by 50% by mastering the new arts of HTTP/2.</p>
+                        <div class="project-tags"><span class="tag">Netty</span><span class="tag">AWS</span><span class="tag">Networking</span></div>
+                    </div>
+                    <div class="project-card reveal-dramatic" data-delay="0.3s">
+                        <h3>The Scryer's Stone</h3>
+                        <p>Developed peer grouping analytics to slash false positives in user risk scoring by 85%, sharpening the accuracy of Zoho's security platform against unseen threats.</p>
+                        <div class="project-tags"><span class="tag">ML</span><span class="tag">Security</span><span class="tag">Data Pipeline</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <span class="section-label reveal-dramatic">Core Competencies</span>
+                <h2 class="reveal">The Armoury</h2>
+                <div class="tech-stack-grid">
+                    <div class="skill-chip reveal" data-delay="0.0s">Java</div>
+                    <div class="skill-chip reveal" data-delay="0.05s">Python</div>
+                    <div class="skill-chip reveal" data-delay="0.1s">Spring Boot</div>
+                    <div class="skill-chip reveal" data-delay="0.15s">Netty</div>
+                    <div class="skill-chip reveal" data-delay="0.2s">GCP</div>
+                    <div class="skill-chip reveal" data-delay="0.25s">Kubernetes</div>
+                    <div class="skill-chip reveal" data-delay="0.3s">Docker</div>
+                    <div class="skill-chip reveal" data-delay="0.35s">PostgreSQL</div>
+                    <div class="skill-chip reveal" data-delay="0.4s">Redis</div>
+                    <div class="skill-chip reveal" data-delay="0.45s">RabbitMQ</div>
+                    <div class="skill-chip reveal" data-delay="0.5s">Apache Pulsar</div>
+                    <div class="skill-chip reveal" data-delay="0.55s">Git</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="container">
+                <span class="section-label reveal-dramatic">Career Trajectory</span>
+                <h2 class="reveal">The Chronicle</h2>
+                <div class="experience-list">
+                    <div class="experience-item reveal-dramatic">
+                        <div class="experience-meta">
+                            <h3>Senior Software Knight (SDE 3)</h3>
+                            <p>The Kingdom of PayPal</p>
+                            <span class="date">Feb 2025 - Present</span>
+                        </div>
+                        <div class="experience-description">
+                           <ul>
+                                <li>Architected a new Embedded Tax Filing system, from high-level scrolls to the final production decree.</li>
+                                <li>Reduced Direct Deposit processing latency by 62% by re-forging the pipeline with asynchronous carrier ravens (messaging).</li>
+                                <li>Engineered secure fund routing pipelines that contributed to 30% of total inbound tribute, a major revenue-driving conquest.</li>
+                                <li>Raised code quality to the highest 'A' grade and fortified test coverage to over 85%, ensuring the realm's long-term prosperity.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="experience-item reveal-dramatic">
+                        <div class="experience-meta">
+                            <h3>Master Builder</h3>
+                            <p>The Zoho Citadel</p>
+                            <span class="date">Dec 2020 - Jan 2025</span>
+                        </div>
+                        <div class="experience-description">
+                            <ul>
+                                <li>Engineered and maintained distributed services that withstood high traffic sieges, achieving a 40% improvement in system efficiency.</li>
+                                <li>Cut production skirmishes by 80% through rigorous code reviews, automated drills, and establishing CI/CD best practices.</li>
+                                <li>Adopted an event-driven architecture with RabbitMQ, decoupling services and enhancing the citadel's resilience.</li>
+                                <li>Forged Docker-based local environments, accelerating builder iteration cycles and minimizing integration conflicts.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="github-stats">
+            <div class="container">
+                <span class="section-label reveal-dramatic">By the Numbers</span>
+                <h2 class="reveal">Triumphs</h2>
+                <div class="stats-grid">
+                    <div class="stat-item reveal-dramatic">
+                        <span class="stat-number" data-target="5">0</span>+
+                        <span class="stat-label">Years of Service</span>
+                    </div>
+                     <div class="stat-item reveal-dramatic" data-delay="0.1s">
+                        <span class="stat-number" data-target="62">0</span>%
+                        <span class="stat-label">Latency Slain</span>
+                    </div>
+                    <div class="stat-item reveal-dramatic" data-delay="0.2s">
+                        <span class="stat-number" data-target="99.99">0</span>%
+                        <span class="stat-label">Transaction Faith</span>
+                    </div>
+                    <div class="stat-item reveal-dramatic" data-delay="0.3s">
+                        <span class="stat-number" data-target="85">0</span>%+
+                        <span class="stat-label">Fortified Coverage</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="education">
+             <div class="container">
+                <span class="section-label reveal-dramatic">Education & Certifications</span>
+                <h2 class="reveal">Scrolls & Sigils</h2>
+                <div class="education-card reveal-dramatic">
+                    <h3>B.E. Mechatronics Engineering</h3>
+                    <p style="color: var(--text);">Thiagarajar College of Engineering, Madurai</p>
+                    <p>May 2020</p>
+                    <a href="https://www.credly.com/badges/74762994-2788-4d37-a0ff-5d23c12dbb17" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="margin-top:1.5rem;">View Google Cloud Sigil</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="contact-content reveal-dramatic">
+                    <span class="section-label">What's Next?</span>
+                    <h2>Let's Forge an Alliance</h2>
+                    <p>I seek new quests where my experience in building distributed kingdoms can solve great challenges. <br>If you are raising banners for a high-impact campaign, our paths should cross.</p>
+                    <a href="mailto:rishikeshpandian53@gmail.com" class="email-link">rishikeshpandian53@gmail.com</a>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/rishikesh-n-433b52171/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.75c0-1.4-1.2-2.5-2.5-2.5S11 12.85 11 14.25V19h-3v-9h2.9v1.3a3.11 3.11 0 012.6-1.3c2.2 0 3.5 1.8 3.5 4.25z"/></svg>
+                        </a>
+                        <a href="https://github.com/rishikeshpandian" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rishikesh N. A Chronicle Forged in Code.</p>
+        </div>
+    </footer>
+
+    
+  <script src="script.js"></script>
+</body>
+</html>
